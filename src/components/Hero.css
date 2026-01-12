@@ -1,0 +1,79 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    /* Light blue gradient */
+    position: relative;
+    padding-top: 60px;
+    /* Offset for fixed navbar */
+}
+
+/* Optional: Add a subtle overlay or shape if needed later, but sticking to gradient for now */
+
+.hero-name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+.hero-title {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-tagline {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.hero-socials {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.social-link {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.social-link:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0 2rem;
+    }
+}
